@@ -1,12 +1,17 @@
 import static java.lang.System.*;
 
-public class KongaEcommerceTest {
-    public static void main(String[] args) {}
 
+     import org.testng.annotations.BeforeTest;
+        (description = "test description")
+public void testName() {
+    org.testng.Assert.assertTrue(true, "String message");
+
+}
+    public class KongaEcommerceTest {
+
+        public static void main(String[] args) {}
 // import the selenium WebDriver
     private WebDriver driver ;
-
-    @BeforeTest
 
     public void start () throws InterruptedException
 
@@ -15,24 +20,23 @@ public class KongaEcommerceTest {
         return "KongaEcommerceTest{" +
                 "driver=" + driver +
                 '}';
-    }
-
+    @KongaEcommerceTest
     public KongaEcommerceTest() {
-
+@ @org.testng.annotations.Test(description = "test description")
+            public void testName () {
+                org.testng.Assert.assertTrue(true, "String message");
         //locate where the chromedriver is
         System.setProperty("webdriver.chrome.driver"."chromedriver.exe");
-
         //1. Open the Chrome browser
-
         driver = new WebDriver();
-
         //2. input the Konga URL page
         // Action Comment: Open chrome Browser and enter the Konga URL Link in the address bar.
         driver.get("https://www.konga.com/");
         Thread.sleep(5000);
+
         //3. Sign in to Konga Successfully
         // Action Comment: Locate and click on the longin / SignUp menu on the Home Page
-        driver .findElement(By.xpath("//*[@id=/div[4]/section/section/div/aside/div[1]/div/h5")).click();
+        driver .findElement(By.xpath("/f/*[@id=/div[4]/section/section/div/aside/div[1]/div/h5")).click();
         //Action Comment : Enter valid email address or phone number in the email address / phone number field
         driver .findElement(By.id("username")).sendKeys("Tolulope");
         // Action Comment : Enter valid password in the password field
@@ -45,7 +49,7 @@ public class KongaEcommerceTest {
         driver. findElement (By.xpath("/html/body/div/div/section/div[2]/nav/div[2]/div[2]/div/a[2]")).click();
          Thread.sleep(5000);
 
-        //5.Click on Laptops Subcategory
+         //5.Click on Laptops Subcategory
         //Action Comment: locate laptops subcategory and click
         driver. findElement (By.xpath("/html/body/div/div/section/div[2]/div[1]/div/div/div")).click();
         Thread.sleep(5000)
@@ -102,9 +106,10 @@ public class KongaEcommerceTest {
         //13. Close the iFrame that displays the input card modal
         //Action Comments: Locate th close button on card details modal at the top left hand corner of the card
         driver. findElement(By.xpath("/html/body/section/section/section/div[2]/div[1]/aside")).click();
-
-        @AfterTest
-
+        @ @org.testng.annotations.Test(description = "test description")
+                public void testName () {
+            org.testng.Assert.assertTrue(true, "String message");
+                }
         public void. closeBrowser()
         //14.Quit the browser
         //Action: Close Browser

@@ -13,7 +13,7 @@
         <maven.compiler.target>24</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <dependencies>
+    "</dependencies>".
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
         <dependency>
@@ -73,26 +73,6 @@
             <version>2.15.2</version>
         </dependency>
 
-        Visit the URL Konga
-        - Sign in to Konga Successfully
-        - From the Categories, click on the “Computers and Accessories”
-        - Click on the Laptop SubCategory
-        - Click on the Apple MacBooks
-        - Add an item to the cart
-        - Select Address
-
-        - Continue to make payment
-        - Select a Card Payment Method
-        - Input invalid card details
-        - Print Out the error message: Invalid card number
-        - Close the iFrame that displays the input card Modal
-        - Quit the browser.
-
-
-
-
-
     </dependencies>
-
 
 </project>
